@@ -1,0 +1,9 @@
+all:
+    hosts: testserver
+    vars:
+        repo_url: https://github.com/django/django
+        repo: project
+        home_dir: /home/ubuntu
+        repo_dir: "{{ home_dir }}/{{ repo }}"
+        django_dir: "{{ repo_dir }}/django"
+        django_project: project
